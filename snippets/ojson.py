@@ -2,7 +2,7 @@
 opysnippets/ojson:1.0.0
 """
 import json
-import odatetime as dt
+import datetime as dt
 from uuid import UUID
 from collections import OrderedDict
 
