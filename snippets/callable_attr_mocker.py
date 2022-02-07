@@ -1,9 +1,9 @@
 """
 opysnippets/callable_attr_mocker:1.0.0
 """
-import logging
+import ologging
 
-logger = logging.getLogger(__name__)
+logger = ologging.getLogger(__name__)
 
 
 class CallableAttrMocker:

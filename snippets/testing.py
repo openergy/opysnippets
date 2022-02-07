@@ -1,14 +1,14 @@
 """
 opysnippets/testing:1.0.0
 """
-import logging
+import ologging
 import unittest
 import asyncio
 from concurrent.futures import TimeoutError as ConcurrentTimeoutError
 # from nose.tools import nottest
 
 
-logger = logging.getLogger(__name__)
+logger = ologging.getLogger(__name__)
 
 
 # @nottest  # prevent from nose call

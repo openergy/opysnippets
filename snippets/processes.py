@@ -6,7 +6,7 @@ requirements
 psutil
 """
 
-import logging
+import ologging
 import os
 import time
 import platform
@@ -20,7 +20,7 @@ from concurrent.futures import ProcessPoolExecutor
 
 import psutil
 
-_logger = logging.getLogger(__name__)
+_logger = ologging.getLogger(__name__)
 
 
 class ProcessManagementError(Exception):
@@ -223,7 +223,7 @@ class PIDManager:
             except psutil.NoSuchProcess:
                 if self.exists():
                     self.remove()
-                    logging.getLogger(__name__).warning(
+                    ologging.getLogger(__name__).warning(
                         "pid file of component does not match a running process pid. File was removed.",
                         extra=dict(
                             pid_manager_name=self._name

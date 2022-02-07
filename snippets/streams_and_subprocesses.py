@@ -4,7 +4,7 @@ opysnippets/streams_and_subprocesses:1.0.0
 import sys
 import threading
 import contextlib
-import logging
+import ologging
 import subprocess
 
 
@@ -33,7 +33,7 @@ def redirect_stream(src, dst, freq=0.1):
 
 class LoggerStreamWriter:
     def __init__(self, logger_name, level):
-        self._logger = logging.getLogger(logger_name)
+        self._logger = ologging.getLogger(logger_name)
         self._level = level
 
     def write(self, message):
