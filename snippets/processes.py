@@ -6,7 +6,7 @@ requirements
 psutil
 """
 
-import ologging
+import logging
 import os
 import time
 import platform
@@ -20,7 +20,7 @@ from concurrent.futures import ProcessPoolExecutor
 
 import psutil
 
-_logger = ologging.getLogger(__name__)
+_logger = logging.getLogger(__name__)
 
 
 class ProcessManagementError(Exception):

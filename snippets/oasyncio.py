@@ -9,14 +9,14 @@ import os
 import inspect
 import traceback
 import asyncio
-import ologging
+import logging
 import types
 import concurrent
 import platform
 
 from .processes import register_child_for_cleanup
 
-_logger = ologging.getLogger(__name__)
+_logger = logging.getLogger(__name__)
 
 
 _thread_pool = None  # shared between threads
